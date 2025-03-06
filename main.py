@@ -77,7 +77,7 @@ def save_ascii_as_image(ascii_art, width, height, resized_image, output_path="as
         image_width = width * char_width
         image_height = height * line_height
 
-        image = Image.new("RGB", (image_width, image_height), color="black")
+        image = Image.new("RGB", (image_width, image_height), color="#131313")
         draw = ImageDraw.Draw(image)
 
         # Рисуем ASCII-символы на изображении
